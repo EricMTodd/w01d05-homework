@@ -299,7 +299,6 @@ console.log(calculateCube(5));
 
 // 3. 
 const isVowel = (char) => {
-// If char is a vowel, return true. Otherwise, return false.
 	return ["a", "e", "i", "o", "u"].indexOf(char.toLowerCase()) !== -1
 };
 
@@ -317,12 +316,15 @@ const getTwoLengths = (str1, str2) => {
 console.log(getTwoLengths("Hank", "Hippopopalous"));
 
 
-// 5. WiP
-// const getMultipleLengths = ([]) => {
-	
-// };
+// 5.
+const getMultipleLengths = (array) => {
+	let sumOfIndex = [];
+	for (i = 0; i < array.length; i++)
+		sumOfIndex.push(array[i].length);
+	return sumOfIndex
+};
 
-// console.log(getMultipleLengths("What", "is", "up", "my", "dude"));
+console.log(getMultipleLengths(["What", "is", "up", "my", "dude"]));
 
 
 // 6.
@@ -363,6 +365,34 @@ console.log(me.age);
 me["place of residence"] = "Glendale";
 
 console.log(me["place of residence"]);
+
+
+// Slimer
+const monster = {
+	name: "Slimer",
+	color: "greenish",
+	type: "plasm or ghost or something"
+};
+
+console.log(monster.name);
+
+monster.type = "creature";
+
+monster.age = 6;
+
+console.log(monster);
+
+
+// Ogres
+
+
+
+
+
+
+
+
+
 
 
 
